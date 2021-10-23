@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header>
+    <h1 id="title">STex Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <section>
+        <form action="" id="survey-form">
+            <div class="components">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" placeholder="Enter Your Name" class="form-control"><br>
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your Email" class="form-control"><br>
+            <label for="number" id="number-label">Age</label><br>
+            <input type="number" id="number" placeholder="Age" class="form-control"><br>
+            <!-- Dropdown -->
+            <h3>Which Technology you like the most</h3>
+            <input type="radio" id="html" name="fav-lang" value="html">
+            <label for="html">HTML</label><br> <input type="radio" id="css" name="fav-lang" value="css">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav-lang" value="javascript">
+            <label for="javascript">javascript</label><br>
+            <div id="dropdown" style="margin:  20px 0 20px 0;">
+                <label for="smartphone">What is your favourite smartphone brand</label>
+                    <select name="smartphone" id="smartphone"  class="form-control">
+                    <option disabled selected value>select an Option</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="apple">Apple</option>
+                    <option value="oppo">Oppo</option>
+                    </select>
+            </div>
+            <div class="checkbox" style="margin-bottom: 20px;">
+                <h3>What would you like to see improved? (Check all that apply)</h3>
+                <input type="checkbox" id="frontend" name="frontend" value="frontend">
+                <label for="frontend">Frontend</label><br>
+                <input type="checkbox" id="backend" name="backend" value="backend">
+                <label for="backend">Backend</label><br>
+                <input type="checkbox" id="challenges" name="challenges" value="challenges">
+                <label for="challenges">Challenges</label><br>
+                <input type="checkbox" id="github" name="github" value="github">
+                <label for="github">Github</label><br>
+            </div>
+                <label for="comments" id="comments">Any comments or suggestions?</label><br>
+                <textarea name="comments" class="form-control" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            <div class="form-control" id="greenBtn">
+            <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+        </form>
+    </section>
+</body>
+</html>
